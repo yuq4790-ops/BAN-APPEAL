@@ -3,7 +3,7 @@ import os
 from discord.ext import commands
 from discord import app_commands
 import io
-os.getenv("TOKEN")
+TOKEN = os.getenv("TOKEN")
 ROLE_ID = 1515387713715441715
 
 
