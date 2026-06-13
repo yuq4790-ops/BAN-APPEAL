@@ -13,10 +13,6 @@ intents.guilds = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-@bot.event
-async def on_ready():
-    await bot.tree.sync()
-    print(f"Logged in as {bot.user}")
 
 @bot.tree.command(name="ban", description="Schickt den user in Ban Modus")
 @app_commands.checks.has_permissions(administrator=True)
